@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -79,6 +79,59 @@
         /><br /><br />
         <input id="submit" type="submit" value="SUBMIT" />
       </fieldset>
+    </form>
+  </body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration Form</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="fname">First name:</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        minlength="4"
+        maxlength="8"
+        placeholder="Enter your name..."
+      /><br /><br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="sophie@example.com"
+      /><br /><br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="enter your password"
+      /><br /><br />
+      <label for="department">Department:</label>
+      <select name="departments" id="department">
+        <option value="choose the department">
+          Please choose the Department
+        </option>
+        <option value="Human Resource">Human Resource</option>
+        <option value="Management">Management</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Finance">Finance</option></select
+      ><br /><br />
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label><br /><br />
+      <label for="options">Food Preferences:</label>
+      <input type="checkbox" id="" />
     </form>
   </body>
 </html>
