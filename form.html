@@ -100,6 +100,7 @@
         minlength="4"
         maxlength="8"
         placeholder="Enter your name..."
+        required
       /><br /><br />
       <label for="email">Email:</label>
       <input
@@ -125,13 +126,23 @@
         <option value="Electronics">Electronics</option>
         <option value="Finance">Finance</option></select
       ><br /><br />
-      <label for="gender">Gender:</label>
-      <input type="radio" id="male" name="gender" value="Male" />
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="Female" />
-      <label for="female">Female</label><br /><br />
-      <label for="options">Food Preferences:</label>
-      <input type="checkbox" id="" />
+      <fieldset>
+        <legend>Select A Gender</legend>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label><br><br>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+      </fieldset><br /><br />
+      <label for="options">Food Preferences:</label><br />
+      <input type="checkbox" id="pizza" name="pizzeria" />
+      <label for="pizza">Pizza</label>
+      <input type="checkbox" id="burger" name="burgeria" />
+      <label for="burger">Burger</label>
+      <input type="checkbox" id="shawarma" name="Arabian" />
+      <label for="shawarma">Shawarma</label><br /><br />
+      <label for="files">Choose a Profile Picture:</label>
+      <input type="file" id="files" name="file" /><br /><br />
+      <input type="submit" value="SUBMIT"/>
     </form>
   </body>
 </html>
